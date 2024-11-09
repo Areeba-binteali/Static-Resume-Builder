@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Builder</title>
+</head>
+
+<body>
+
+    <!-- header starts here -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <h2><span>Resume</span> Builder</h2>
+                </a>
+            </div>
+            <div class="button">
+                <a href="createresume.html">
+                    <button>Build My Resume</button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- header ends here -->
+
+
+    <!-- main content starts here -->
+    <main>
+
+        <!-- entry starts here -->
+        <section class="entry">
+            <div class="container">
+                <div class="entrytitle">
+                    <h3>Let&apos;s start building your perfect <span>resume!</span></h3>
+                    <h5>Just a few details to kickstart your resume journey!</h5>
+                </div>
+            </div>
+        </section>
+        <!-- entry ends here -->
+
+
+        <!-- resume form starts here -->
+        <section class="resumeForm">
+            <div class="container">
+                <form action="../">
+                    <div class="personalInfo formdivs">
+                        <h2>Personal details</h2>
+                        <div class="namesec">
+                            <div class="title">
+                                <h3>Name</h3>
+                            </div>
+                            <div class="name flex-input">
+                                <div class="firstname">
+                                    <label for="firstname">First Name</label>
+                                    <input type="text" id="firstname" placeholder="Please enter your First name">
+                                </div>
+                                <div class="lastname">
+                                    <label for="lastname">last Name</label>
+                                    <input type="text" id="lastname" placeholder="Please enter your last name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contactsec">
+                            <div class="title">
+                                <h3>Contact Details</h3>
+                            </div>
+                            <div class="contact flex-input">
+                                <div class="phonenumber">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="number" id="phone" placeholder="Please enter your Phone Number">
+                                </div>
+                                <div class="email">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" placeholder="Please enter your email address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="title">
+                                <h3>Profile Deatils</h3>
+                            </div>
+                            <div class="profileInfo flex-input">
+                                <div class="profilepicture">
+                                    <label for="profilepic">Profile Picture</label>
+                                    <input type="file" id="profilepic">
+                                </div>
+                                <div class="headline">
+                                    <label for="headline">Headline/Title</label>
+                                    <input type="text" id="headline" placeholder="Please enter your job title">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="educationaldetails formdivs">
+                        <h2>Educational details</h2>
+                        <div class="matriculation">
+                            <div class="title">
+                                <h3>Matriculation</h3>
+                            </div>
+                            <div class="matricDetails flex-input">
+                                <div class="degree">
+                                    <label for="degree">Field of study</label>
+                                    <input type="text" id="degree" placeholder="Please enter your field of study">
+                                </div>
+                                <div class="institute">
+                                    <label for="school">School Name</label>
+                                    <input type="text" id="school" placeholder="Please enter your school name">
+                                </div>
+                                <div class="startdate">
+                                    <label for="startdate">Start Date</label>
+                                    <input type="date" id="startdate" placeholder="Please enter your start date">
+                                </div>
+                                <div class="enddate">
+                                    <label for="enddate">End Date</label>
+                                    <input type="date" id="enddate" placeholder="Please enter your end date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intermediate">
+                            <div class="title">
+                                <h3>Intermediate</h3>
+                            </div>
+                            <div class="interDetails flex-input">
+                                <div class="degree">
+                                    <label for="interdegree">Field of study</label>
+                                    <input type="text" id="interdegree" placeholder="Please enter your field of study">
+                                </div>
+                                <div class="institute">
+                                    <label for="college">College Name</label>
+                                    <input type="text" id="college" placeholder="Please enter your college name">
+                                </div>
+                                <div class="startdate">
+                                    <label for="interstartdate">Start Date</label>
+                                    <input type="date" id="interstartdate" placeholder="Please enter your start date">
+                                </div>
+                                <div class="enddate">
+                                    <label for="interenddate">End Date</label>
+                                    <input type="date" id="interenddate" placeholder="Please enter your end date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="symbols">
+                            <h2 id="plusbachelors" class="symbol" onclick="addBachelors()"><span>Add Bachelor&apos;s </span> &nbsp;+</h2>
+                        </div>
+                        <div class="bachelors" id="bachelorsdiv">
+                            <div class="title">
+                                <h3>Bachelor&apos;s</h3>
+                            </div>
+                            <div class="bachelorsDetails flex-input">
+                                <div class="degree">
+                                    <label for="bachelorsdegree">Field of study</label>
+                                    <input type="text" id="bachelorsdegree" placeholder="Please enter your field of study">
+                                </div>
+                                <div class="institute">
+                                    <label for="university">University Name</label>
+                                    <input type="text" id="university" placeholder="Please enter your university name">
+                                </div>
+                                <div class="startdate">
+                                    <label for="bachelorsstartdate">Start Date</label>
+                                    <input type="date" id="bachelorsstartdate" placeholder="Please enter your start date">
+                                </div>
+                                <div class="enddate">
+                                    <label for="bachelorsenddate">End Date</label>
+                                    <input type="date" id="bachelorsenddate" placeholder="Please enter your end date">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="symbols">
+                            <h2 id="minusbachelors" class="symbol" onclick="deleteBachelors()"><span>Remove Bachelor&apos;s </span> &nbsp-</h2>
+                        </div>
+                    </div>
+                    <div class="skillsdetails formdivs">
+                        <h2>Skills</h2>
+                        <div class="technicalskills">
+                            <div class="title">
+                                <h3>Technical Skills</h3>
+                            </div>
+                            <div class="techskills flex-input">
+                                <div class="techskill1">
+                                    <label for="techskill1">Technical Skill 1</label>
+                                    <input type="text" id="techskill1" placeholder="please enter your technical skills">
+                                </div>
+                                <div class="techskill2">
+                                    <label for="techskill2">technical Skill 2</label>
+                                    <input type="text" id="techskill2" placeholder="please enter your technical skills">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="softskills">
+                            <div class="title">
+                                <h3>Soft Skills</h3>
+                            </div>
+                            <div class="softskill flex-input">
+                                <div class="softskill1">
+                                    <label for="softskill1">soft Skill 1</label>
+                                    <input type="text" id="softskill1" placeholder="please enter your soft skills">
+                                </div>
+                                <div class="softskill2">
+                                    <label for="softskill2">soft Skill 2</label>
+                                    <input type="text" id="softskill2" placeholder="please enter your soft skills">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workexperience formdivs">
+                        <h2>Work Details</h2>
+                        <div class="years">
+                            <div class="title">
+                                <h3>Are experienced?</h3>
+                            </div>
+                            <div class="yearexp flex-input">
+                                <div class="freshdiv">
+                                    <input type="radio" name="exp" id="fresh" value="fresh">
+                                <label for="fresh">No, I'm a Fresh graduate</label>
+                                </div>
+                                <div class="experienceddiv">
+                                    <input type="radio" name="exp" id="experienced" value="experienced">
+                                <label for="experienced">Yes, I'm experienced</label>
+                                </div>
+                            </div>
+                            <div class="expyear" id="experice">
+                                <label for="yearexperience">Years/Months of experience</label>
+                                <input type="text" id="yearexperience" placeholder="Please enter years/months of experience">
+                            </div>
+                        </div>
+                        <div class="workingexp" id="workexp1">
+                            <div class="title">
+                                <h3 id="workexp1head">Working experience</h3>
+                            </div>
+                            <div class="workexp1 flex-input">
+                                <div class="jobtitle">
+                                    <label for="jobtitle">Job Title</label>
+                                    <input type="text" id="jobtitle" placeholder="Please enter your job title">
+                                </div>
+                                <div class="organization">
+                                    <label for="org">Your Organization</label>
+                                    <input type="text" id="org" placeholder="please enter your organization">
+                                </div>
+                                <div class="startdate">
+                                    <label for="work1startdate">Start Date</label>
+                                    <input type="date" id="work1startdate" placeholder="Please enter your start date">
+                                </div>
+                                <div class="enddate">
+                                    <label for="work1enddate">End Date</label>
+                                    <input type="date" id="work1enddate" placeholder="Please enter your end date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="symbols">
+                            <h2 id="plus" class="symbol" onclick="addwork()">+</h2>
+                        </div>
+                        <div class="workingexp" id="workexp2">
+                            <div class="title">
+                                <h3>Working experience 2</h3>
+                            </div>
+                            <div class="workexp2 flex-input">
+                                <div class="jobtitle">
+                                    <label for="jobtitle2">Job Title</label>
+                                    <input type="text" id="jobtitle2" placeholder="Please enter your job title">
+                                </div>
+                                <div class="organization">
+                                    <label for="org2">Your Organization</label>
+                                    <input type="text" id="org2" placeholder="please enter your organization">
+                                </div>
+                                <div class="startdate">
+                                    <label for="work2startdate">Start Date</label>
+                                    <input type="date" id="work2startdate" placeholder="Please enter your start date">
+                                </div>
+                                <div class="enddate">
+                                    <label for="work2enddate">End Date</label>
+                                    <input type="date" id="work2enddate" placeholder="Please enter your end date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="symbols">
+                            <h2 id="minus" class="symbol" onclick="deletework()">-</h2>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- resume form ends here -->
+
+        <div class="savebuton">
+            <a href="#">
+                <button>Save & View Your Resume</button>
+            </a>
+        </div>
+
+    </main>
+    <!-- main content ends here -->
+
+    
+    <footer>
+
+
+        <!-- About me for mobile starts here-->
+        <div class="about">
+            <div class="container">
+                <h6>Want to know about developer?</h6>
+                <a href="aboutme.html">
+                    <button>Click Here</button>
+                </a>
+            </div>
+        </div>
+        <!-- About me for mobile ends here -->
+
+        <!-- copyright starts here -->
+        <div class="copyright">
+            <h3>&copy; Copyright@ResumeBuilder 2024. All rights reserved</h3>
+        </div>
+        <!-- copyright ends here -->
+
+
+    </footer>
+    <!-- Footer ends here -->
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>

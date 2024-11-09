@@ -1,0 +1,556 @@
+/* Imported Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Universal styling starts here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    max-width: 1310px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* Universal styling ends here */
+
+/* Header styling starts here */
+header{
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 20px 0;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    background-color: #E87F5F;
+    border-radius: 100px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #63A0BB;
+}
+.logo h2{
+    color: #63A0BB;
+    font-family: 'Nunito';
+    font-size: 42px;
+}
+span{
+    color: #E87F5F;
+    font-family: 'Nunito';
+}
+/* Header styling ends here */
+
+/* Banner styling starts here */
+.banner{
+    background-color: #63A0BB;
+    color: #fff;
+    padding: 100px 0 150px;
+    clip-path: ellipse(110% 100% at 50% 0%);
+}
+.banner .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.banner .container div.content{
+    width: 57%;
+}
+.banner .container .image{
+    width: 40%;
+}
+.image img{
+    width: 100%;
+}
+.content h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.content h1{
+    font-family: 'Nunito';
+    font-size: 68px;
+}
+.content h3{
+    font-weight: 400;
+    font-size: 18px;
+}
+.content button{
+    margin-top: 50px;
+}
+.content button:hover{
+    background-color: #fff;
+    color: #E87F5F;
+}
+/* Banner styling ends here */
+
+/* Working Steps styling starts here */
+.workingsteps{
+    padding: 80px 0;
+    text-align: center;
+}
+.maintitle h2{
+    color: #63A0BB;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-family: 'Nunito';
+}
+.maintitle h5{
+    font-size: 18px;
+    font-weight: 400;
+}
+.steps{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    position: relative;
+}
+.steps::before{
+    content: '';
+    width: 70%;
+    height: 100%;
+    border-top: 5px dashed #63A0BB;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 15%;
+}
+.step{
+    width: 30%;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+}
+.step h3{
+    padding: 24px 35px;
+    background-color: #E87F5F;
+    border: 2px double #E87F5F;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 24px;
+    width: fit-content;
+    margin: 0 auto;
+}
+.step h4{
+    color: #63A0BB;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Nunito';
+    margin: 40px 0 20px;
+}
+.workingsteps button{
+    margin-top: 60px;
+    padding: 15px 60px;
+}
+/* Working Steps styling ends here */
+
+/* Footer styling starts here */
+.about{
+    padding: 150px 0 80px;
+    text-align: center;
+    background-color: #63A0BB;
+    color: #fff;
+    clip-path: ellipse(100% 80% at 50% 100%);
+}
+.about h6{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.about button:hover{
+    background-color: #fff;
+    color: #E87F5F;
+}
+.copyright{
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+.copyright h3{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+/* Footer styling ends here */
+
+
+
+/* create resume styling starts here */
+
+/* entry styling starts here */
+.entry{
+    text-align: center;
+    padding: 80px 0 ;
+    background-color: #63A0BB;
+    clip-path: ellipse(110% 100% at 50% 0%);
+
+}
+.entrytitle h3{
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-family: 'Nunito';
+    text-transform: capitalize;
+}
+.entrytitle h5{
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+/* entry styling ends here */
+
+/* resume form styling starts here */
+.resumeForm{
+    padding: 30px 0;
+}
+form h2{
+    color: #fff;
+    font-size: 30px;
+    background-color: #E87F5F;
+    font-family: 'nunito';
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 100px;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+.formdivs{
+    padding: 20px 0;
+}
+.formdivs .title{
+    padding: 30px 0 10px;
+}
+.title h3{
+    color: #E87F5F;
+    font-family: 'nunito';
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.flex-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-input label, .expyear label{
+    display: block;
+    margin-bottom: 10px;
+    color: #63A0BB;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.flex-input div{
+    width: 47%;
+    margin: 10px 0;
+}
+.flex-input input, .expyear input{
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 5px;
+    border: 2px solid #63A0BB;
+}
+.flex-input input::placeholder, .expyear input::placeholder{
+    color: #333;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.flex-input input:focus, .expyear input:focus{
+    border-color: #E87F5F;
+    outline: none;
+}
+.flex-input.yearexp label{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.flex-input.yearexp input{
+    width: fit-content;
+}
+.savebuton a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.expyear, .workingexp{
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    display: none;
+}
+.symbols{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.symbol{
+    width: fit-content;
+    cursor: pointer;
+}
+#plus, #plusbachelors{
+    padding: 12px 25px;
+    transition: 0.3s;
+    display: none;
+}
+#minus, #minusbachelors{
+    padding: 12px 27px;
+    transition: 0.3s;
+    display: none;
+}
+#plusbachelors, #minusbachelors{
+    display: block;
+    line-height: 28px;
+}
+#plusbachelors span, #minusbachelors span{
+    font-size: 18px;
+    color: #fff;
+    line-height: 26px;
+}
+#minusbachelors{
+    display: none;
+}
+#bachelorsdiv{
+    display: none;
+    max-height: 0;
+    transition: 0.3s;
+}
+/* resume form styling ends here */
+
+/* create resume styling ends here */
+
+
+/* about areeba starts here */
+.aboutme{
+    padding: 80px 0 40px;
+}
+.aboutme .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.aboutme .container .bio{
+    width: 57%;
+}
+.aboutme .container .image{
+    width: 40%;
+}
+.bio h4{
+    color: #63A0BB;
+    font-size: 38px;
+    font-family: 'nunito';
+}
+.bio p{
+    font-size: 17px;
+    color: #333;
+    line-height: 24px;
+}
+.social i.fa-linkedin-in{
+    font-size: 24px;
+    color: #fff;
+    background-color: #63A0BB;
+    padding: 12px 15px;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+.social i.fa-linkedin-in:hover{
+    background-color: #E87F5F;
+}
+.social i.fa-github{
+    color: #63A0BB;
+    font-size: 48px;
+    transition: 0.3s;
+}
+.social i.fa-github:hover{
+    color: #E87F5F;
+}
+.social{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+/* about areeba ends here */
+
+/* media queries for tablet */
+@media (max-width: 991px) {
+    .banner .container div.content{
+        width: 100%;
+        text-align: center;
+    }
+    .banner .container .image{
+        width: 80%;
+        margin: 50px auto 0;  
+    }
+    .content h1{
+        font-size: 60px;
+    }
+    .banner{
+        clip-path: ellipse(160% 100% at 50% 0%);
+        padding: 80px 0 100px;
+    }
+    .step{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 40px;
+        margin-top: 60px;
+    }
+    .steps{
+        justify-content: flex-start;
+        margin-top: 0;
+        text-align: left;
+    }
+    .step h3{
+        margin: 0;
+    }
+    .step h4{
+        margin: 0 0 20px;
+    }
+    .steps::before{
+        border: none;
+        border-left: 5px dashed #63A0BB;
+        left: 56px;
+        top: 80px;
+        height: 70%;
+    }
+    .flex-input label{
+        font-size: 16px;
+    }
+    form h2{
+        font-size: 26px;
+        padding: 12px;
+    }
+    .title h3{
+        font-size: 20px;
+    }
+    .entrytitle h5{
+        font-size: 20px;
+    }
+    .entrytitle h3{
+        font-size: 38px;
+    }
+    .flex-input input{
+        padding: 25px 20px;
+    }
+}
+
+
+
+/* media queries for mobile */
+@media (max-width: 767px) {
+    .logo h2{
+        font-size: 20px;
+    }
+    header button{
+        font-size: 12px;
+    }
+    button{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    header .container{
+        padding: 0 10px;
+    }
+    .content h4, .content h3{
+        font-size: 14px;
+    }
+    .content h1{
+        font-size: 36px;
+    }
+    .workingsteps{
+        padding: 80px 0 40px;
+    }
+    .step h3{
+        padding: 18px 30px;
+    }
+    .step h4{
+        font-size: 22px;
+        margin: 0 0 10px;
+    }
+    .step p{
+        font-size: 14px;
+    }
+    .steps::before{
+        left: 36px;
+    }
+    .step{
+        column-gap: 20px;
+        padding: 0;
+    }
+    .maintitle h2{
+        font-size: 32px;
+    }
+    .maintitle h5{
+        font-size: 15px;
+    }
+    .copyright h3{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .copyright{
+        padding: 20px;
+    }
+    .about h6{
+        font-size: 20px;
+    }
+    .about button{
+        padding: 15px 30px;
+    }
+    .flex-input div{
+        width: 100%;
+    }
+    form h2{
+        font-size: 22px;
+    }
+    .entrytitle h5{
+        font-size: 18px;
+    }
+    .entrytitle h3{
+        font-size: 32px;
+    }
+    .aboutme .container{
+        flex-direction: column-reverse;
+    }
+    .aboutme .container .bio{
+        width: 100%;
+    }
+    .aboutme .container .image{
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+    .social i.fa-github{
+        font-size: 40px;
+    }
+    .social i.fa-linkedin-in{
+        font-size: 20px;
+        padding: 11px 13px;
+    }
+    .bio h4{
+        font-size: 30px;
+    }
+    .bio p{
+        font-size: 16px;
+    }
+}
